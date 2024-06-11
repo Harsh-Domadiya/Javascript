@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        display: flex;
+        gap: 20px;
+        color: white;
+        font-size: 20px;
+
+    }
+
+    .btn1 {
+        height: 40px;
+        width: 80px;
+        background-color: rgb(19, 75, 19);
+        /* border: 2px solid black; */
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .D0 {
+        background-color: rgb(136, 130, 76);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resent {
+        padding-top: 20px;
+    }
+</style>
+
+<body>
+    <h1>Counter App</h1>
+    <div class="btn">
+        <!-- <input type="number" id="input"> -->
+        <button class="btn1" id="inc">+</button>
+        <div class="btn1 D0" id="zero">0</div>
+        <button class="btn1" id="dic">-</button>
+    </div>
+    <div class="resent">
+        <button class="btn1" id="res">Resent</button>
+    </div>
+</body>
+
+<script>
+
+    let counter = 0;
+    var getNum = document.getElementById('num');
+    const a = document.getElementById('inc');
+    const b = document.getElementById('dic');
+    const c = document.getElementById('res');
+    const d = document.getElementById('number');
+    // const e = document.getElementById('input');
+
+
+    a.addEventListener('click', inc);
+    function inc() {
+        // console.log(inc);        
+        counter++;
+        zero.innerHTML = counter;
+
+    }
+
+    b.addEventListener('click', dic);
+    function dic() {
+        console.log(typeof getNum.value);
+        counter = counter - Number(getNum.value);
+        if (counter < 0) {
+            counter = 0;
+            // zero.innerHTML=counter;
+        }
+        if (counter > 0); {
+            zero.innertext = counter;
+        }
+        counter = 0
+
+    }
+
+    // b.addEventListener('click', dic);
+    // function dic() {
+    //     console.log(inc);
+    //     counter--;
+    //     zero.innerHTML = counter;
+
+    // }
+
+    c.addEventListener('click', res);
+    function res() {
+        counter = 0;
+        zero.innerHTML = counter;
+    }
+
+</script>
+
+</html>

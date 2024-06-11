@@ -1,0 +1,80 @@
+body {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.s1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.cal {
+  height: 355px;
+  width: 292px;
+  padding: 10px;
+  border: 1px solid black;
+  background-color:rgb(114, 109, 109);
+  border-radius: 10px;
+
+}
+
+.main {
+  display: flex;
+  justify-content: end;
+  height: 60px;
+  width: 280px;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  font-size: 50px;
+}
+
+
+.button {
+  margin:5px;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-color:rgb(175, 175, 175);
+
+}
+
+.btn {
+  width: auto;
+  padding: 5px;
+  height: 60px;
+  /* margin: 10px; */
+  color: #FFF;
+  font-size: 25px;
+  border: px solid black;
+
+  background-color: rgb(84, 79, 79);
+}
+
+.btn{
+  background-color: brown;
+  color:white ;
+}
+.btn:active {
+  background-color: orange;
+  
+}
+
+.C{
+  background-color: brown;
+  color: #FFF;
+}
+.C:active {
+  background-color: orange;
+}
+
+.C:hover{
+  border: px solid orange;
+}
